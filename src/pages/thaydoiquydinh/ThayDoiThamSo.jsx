@@ -173,7 +173,7 @@ function ThayDoiThamSo() {
             />
           </div>
           <div className="mb-4 flex items-center">
-            <label className="w-auto mr-3">Cho phép thu vượt tiền nợ:</label>
+            <label className="w-auto mr-3">Không cho phép thu vượt tiền nợ:</label>
             <select
               id="allow-overdue"
               className="border border-gray-300 p-2 flex-grow"
