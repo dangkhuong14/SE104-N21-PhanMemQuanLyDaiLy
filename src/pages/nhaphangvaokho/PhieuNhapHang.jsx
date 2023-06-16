@@ -39,8 +39,6 @@ function PhieuNhapHang() {
     const soLuong = parseInt(form.SoLuong.value);
 
     try {
-      if (!soLuong) throw new Error('Bạn phải nhập số lượng.')
-      if (soLuong < 0) throw new Error('Số lượng bạn nhập vào phải lớn hơn 0.')
       await addPhieunhaphang({
         variables: { MaMatHang: maMatHang, SoLuong: soLuong },
         refetchQueries: () => [{
