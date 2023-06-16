@@ -128,6 +128,8 @@ function BaoCaoDoanhThu() {
     );
   };
 
+  const isLoading = evBCDSByMaBCDSLoading || evBCDSLoading || addBCDSByLoading || addCT_CDSLoading || calculateTyLeLoading;
+
   const createTable = (date, tableData) => {
     let data = [...tableData]
     data.sort((a, b) => b.TongTriGia - a.TongTriGia)
